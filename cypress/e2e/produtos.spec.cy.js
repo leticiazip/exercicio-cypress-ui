@@ -42,7 +42,7 @@ describe('Funcionalidade página de produtos', () => {
         cy.get(':nth-child(2) > .text-skin > .count_wishlist').should('contain', 1)
     })
 
-    it.only('Usuário deve fazer uma avaliação do produto', () => {
+    it('Usuário deve fazer uma avaliação do produto', () => {
         let produto = 'Atlas Fitness Tank'
         var estrelas = 4
         let nomeAutor = faker.name.firstName()
